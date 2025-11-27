@@ -1,0 +1,85 @@
+* {
+  font-family: "Ubuntu", "Oswald";
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.article {
+  padding-top: 185px;
+  padding-bottom: 120px;
+}
+
+.conteiner {
+  max-width: 1220px;
+
+  margin: 0 auto;
+}
+
+.headder-1 {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+  max-width: 596px;
+  max-height: 110px;
+}
+
+.text-1 {
+  margin: 20px 0px 20px 0px;
+}
+
+.text-2 {
+  margin: 20px 0px 0px 0px;
+}
+
+.images {
+  margin: 80px 0px 80px 0px;
+  max-width: 1220px;
+  max-height: 512px;
+}
+
+.headder-2 {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+  max-width: 596px;
+  margin: 0px 0px 40px 0px;
+}
+
+.text-3 {
+  max-width: 744px;
+  min-height: 42px;
+}
+
+.list {
+  padding: 0 0 0 20px;
+}
+
+.unit {
+  padding: 0px 0px 8px 0px;
+}
+
+.headder-3 {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+  max-width: 596px;
+  margin: 72px 0px 0px 0px;
+}
+
+.video {
+  margin: 80px 0px 0px 0px;
+  max-width: 1220px;
+}
+
+.text-4 {
+  margin: 40px 0 0 0;
+}
