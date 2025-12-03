@@ -96,7 +96,7 @@ p {
 }
 
 .checkbox:checked::after {
-  background: url(/check-icon.svg), #fc3f1d;
+  background: url(../check-icon.svg) center no-repeat, #fc3f1d;
 }
 
 .button {
