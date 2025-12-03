@@ -3,9 +3,6 @@
   box-sizing: content-box;
 }
 
-body {
-}
-
 .flex-container {
   display: flex;
   max-width: 1320px;
@@ -71,7 +68,6 @@ p {
 .button-and-checkbox {
   display: flex;
   justify-content: center;
-  align-items: start;
 }
 
 .rules {
@@ -89,9 +85,10 @@ p {
 }
 
 .checkbox::after {
+  display: flex;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
@@ -99,7 +96,7 @@ p {
 }
 
 .checkbox:checked::after {
-  background: url("/check-icon.svg") no-repeat center, #fc3f1d;
+  background: url(/check-icon.svg), #fc3f1d;
 }
 
 .button {
@@ -128,9 +125,4 @@ p {
 .box:focus-visible {
   outline: 2px solid #fc3f1d;
   outline-offset: 1px;
-}
-
-.option:focus-visible {
-  background-color: #fc3f1d;
-  color: #fff;
 }
