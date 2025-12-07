@@ -30,3 +30,7 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.section {
+  padding-bottom: 140px;
+}

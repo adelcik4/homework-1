@@ -1,0 +1,191 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto 0px auto;
+  max-width: 1220px;
+  gap: 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  z-index: -1;
+  background: url(../images/decor-large-icon.svg) repeat-x;
+  top: 350px;
+}
+
+.hero-container-left {
+  display: flex;
+  max-width: 492px;
+  max-height: 513px;
+  flex-direction: column;
+}
+
+.hero-title {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero-title strong {
+  color: #3596ed;
+}
+
+.hero-text {
+  margin-top: 40px;
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  max-width: 439px;
+}
+
+.hero-button {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 19px 32px;
+  width: 270px;
+  height: 57px;
+  background-color: #3596ed;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.hero-container-right {
+  display: flex;
+  max-width: 700px;
+  max-height: 513px;
+  position: relative;
+}
+
+.hero-decoration {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #535755;
+  padding: 22px;
+  width: 160px;
+  height: 86px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.hero-woman {
+  width: 347px;
+  height: 513px;
+}
+
+.hero-man {
+  width: 353px;
+  height: 513px;
+}
+
+.news-container {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  justify-content: start;
+}
+
+.news-title {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  display: block;
+}
+
+.news-article {
+  padding-top: 40px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-block {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3cbd9;
+  width: 284px;
+  height: 342px;
+}
+
+.news-img {
+  max-width: 284px;
+  max-height: 203px;
+}
+
+.news-time-text-link {
+  margin: 20px 20px 20px 20px;
+}
+
+.news-time {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.news-text {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+  margin-bottom: 12px;
+}
+
+.news-link {
+  display: block;
+  margin: 0 0 20px 20px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+  text-decoration: none;
+  position: relative;
+  transition: font-size 0.2s;
+}
+
+.news-link:hover {
+  font-size: 16.2px;
+}
+
+.news-link::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 9px;
+  background: url(../images/arrow-right-icon.svg);
+  top: 6px;
+  left: 94px;
+  transition: transform 0.2s;
+}
+
+.news-link:hover::after {
+  transform: translateX(5px);
+}
