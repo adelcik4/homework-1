@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Air Mag</title>
+    <link
+      rel="shortcut icon"
+      href="./icons/nike-favicon-48x48.ico"
+      type="image/x-icon"
+    />
+    <script defer src="./js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="header__link"
+            ><img class="header__img" width="50" height="20" class="header__link-logo-img" src="./icons/logo.svg" alt="Логотип Nike"
+          /></a>
+        <nav class="header__navigation" id="header__menu" aria-label="Главное меню">
+          <div class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Air Mag</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Размеры</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Характеристики</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Другие ТОП модели</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__controls"></div>
+        <a href="#" class="header__order">Сделать заказ</a>
+        <div class="header__actions">
+          <button class="header__actions-button">
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprite.svg#search"
+              ></use>
+            </svg width="24" height="24"></button
+          ><button class="header__actions-button">
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprite.svg#cart"
+              ></use>
+            </svg>
+          </button>
+          <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu"><svg width="24" height="24"><use class="burger__icon-menu" href="./icons/sprite.svg#menu-burger"></use>
+            <use class="burger__icon-cross" href="./icons/sprite.svg#menu-cross"></use>
+          </svg></button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
