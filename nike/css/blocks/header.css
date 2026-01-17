@@ -6,6 +6,7 @@
   left: 0;
   background-color: var(--bg-color);
   transition: box-shadow var(--transition-time);
+  z-index: var(--layer-1);
 }
 
 .header--fixed {
@@ -24,13 +25,14 @@
     margin-right: clamp(25px, -11.585rem + 21.21vw, 120px);
   }
 
-  .header__menu {
+  .header__controls {
     flex-grow: 1;
   }
 }
 
 @media (width <= 768px) {
   .header__menu {
+    font-weight: 300;
     position: fixed;
     top: 0;
     right: -100vw;
@@ -58,6 +60,10 @@
     align-items: flex-end;
     text-align: end;
   }
+}
+
+.menu__link {
+  font-weight: 300;
 }
 
 .header__controls {

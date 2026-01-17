@@ -7,11 +7,10 @@
 .page__body {
   min-width: 375px;
   background-color: var(--bg-color);
-  height: 200vh;
 }
 
 .page__body--no-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .container {
@@ -21,5 +20,6 @@
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
 }
