@@ -1,51 +1,57 @@
 <!doctype html>
-<html class=".page" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dyson</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__container">
         <div class="header__characters">
           <button
+            aria-expanded="false"
+            aria-controls="header__menu"
             class="header__burger-button"
             aria-label="Открыть меню"
             title="Открыть меню"
           >
             <svg class="header__burger burger" width="50" height="50">
               <use
-                class="header__icon-burger"
-                href="./icons/sprite.svg#burger"
+                class="header__icon-burger burger__icon-menu"
+                href="./icons/burger.svg"
               ></use>
+              <use class="burger__icon-cross" href="./icons/cross.svg"></use>
             </svg>
           </button>
           <a class="header__logo" href="/"
             ><img src="./icons/logo.svg" alt="Логотип Dyson"
           /></a>
         </div>
-        <nav id="header__menu" class="header__nav">
-          <div class="header__menu">
-            <ul class="header__nav-list">
-              <li class="header__nav-list-item">
-                <a class="header__nav-list-link" href="##">О нас</a>
+        <nav class="header__menu header__nav">
+          <div class="menu">
+            <ul class="header__nav-list menu__list">
+              <li class="header__nav-list-item menu__item">
+                <a class="header__nav-list-link menu__link" href="##">О нас</a>
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__nav-list-link" href="##">Доставка и оплата</a>
+              <li class="header__nav-list-item menu__item">
+                <a class="header__nav-list-link menu__link" href="##"
+                  >Доставка и оплата</a
+                >
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__nav-list-link" href="##"
+              <li class="header__nav-list-item menu__item">
+                <a class="header__nav-list-link menu__link" href="##"
                   >Регистрация продукта</a
                 >
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__nav-list-link" href="">Сервис</a>
+              <li class="header__nav-list-item menu__item">
+                <a class="header__nav-list-link menu__link" href="##">Сервис</a>
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__nav-list-link" href="##"
+              <li class="header__nav-list-item menu__item">
+                <a class="header__nav-list-link menu__link" href="##"
                   >Сертификаты и лицензии</a
                 >
               </li>
@@ -58,10 +64,31 @@
           title="Открыть корзину"
         >
           <svg class="header__cart cart" width="48" height="48">
-            <use class="header__icon-cart" href="./icons/sprite.svg#cart"></use>
+            <use class="header__icon-cart" href="./icons/cart.svg"></use>
           </svg>
         </button>
       </div>
     </header>
+    <div class="menu-overlay"></div>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title section-title--big">
+            Уникальные технологии для ухода за волосами
+          </h1>
+          <p class="hero__text text-regular">
+            Идеальная укладка для всех типов волос вместе с Dyson
+          </p>
+          <button class="hero__button">Подробнее</button>
+        </div>
+        <picture>
+          <source srcset="./images/hero-image.webp" type="image/webp" />
+          <img
+            src="./images/hero-image.png"
+            alt="Девушка с Феном Dyson в руке"
+            class="hero__img"
+        /></picture>
+      </div>
+    </section>
   </body>
 </html>

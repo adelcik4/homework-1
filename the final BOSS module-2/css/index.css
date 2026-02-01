@@ -2,5 +2,6 @@
 @import "./base/globals.css";
 @import "./base/vars.css";
 @import "./base/fonts.css";
-
 @import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/hero.css";
