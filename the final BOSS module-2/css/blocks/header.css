@@ -119,7 +119,6 @@
   stroke: currentColor;
 }
 
-/* Крест скрыт по умолчанию */
 .burger__icon-cross {
   opacity: 0;
   transform: rotate(45deg);
@@ -180,7 +179,6 @@
     transform: translateX(0);
   }
 
-  /* Блокировка скролла */
   .no-scroll {
     overflow: hidden;
   }
@@ -197,7 +195,6 @@
     text-align: end;
   }
 
-  /* Линии бургера */
   .burger__icon-menu,
   .burger__icon-cross {
     background-color: var(--bg-color);
@@ -211,16 +208,13 @@
     }
   }
 
-  /* -------------------
-   Когда меню открыто
-------------------- */
   .header__burger-button--open .burger__icon-menu {
     transform: rotate(45deg) translate(-50%, -50%);
-    opacity: 0; /* скрываем бургер */
+    opacity: 0;
   }
 
   .header__burger-button--open .burger__icon-cross {
-    opacity: 1; /* показываем крест */
+    opacity: 1;
     transform: rotate(0deg);
   }
 }
@@ -257,8 +251,6 @@
 
 .header__cart {
   color: var(--main-color);
-  width: 48px;
-  height: 48px;
   transition: color var(--transition-time);
   display: flex;
   justify-content: center;

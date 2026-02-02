@@ -12,9 +12,9 @@ export default class BurgerMenu {
       return;
     }
 
+    // 🔥 единый брейкпоинт
     this.isMobileView = window.innerWidth <= config.BREAKPOINT;
 
-    // биндим контекст
     this.onBurgerClick = this.onBurgerClick.bind(this);
     this.onOverlayClick = this.onOverlayClick.bind(this);
     this.onResize = this.onResize.bind(this);
@@ -23,16 +23,13 @@ export default class BurgerMenu {
   }
 
   init() {
-    if (this.isMobileView) {
-      this.addEvents();
-    }
+    this.onResize(); // ✅ принудительная синхронизация при старте
+    window.addEventListener("resize", this.onResize);
 
-    // ✅ Клики внутри меню не закрывают его
+    // клики внутри меню не закрывают его
     this.burgerMenu.addEventListener("click", (e) => {
       e.stopPropagation();
     });
-
-    window.addEventListener("resize", this.onResize);
   }
 
   addEvents() {
@@ -60,19 +57,20 @@ export default class BurgerMenu {
     }
   }
 
-  onBurgerClick(event) {
-    event.stopPropagation();
+  onBurgerClick(e) {
+    e.stopPropagation();
 
     const isOpen = this.burgerButton.classList.toggle(this.config.BURGER_OPEN);
 
     this.burgerMenu.classList.toggle(this.config.HEADER_MENU_OPEN, isOpen);
+
     this.overlay.classList.toggle("menu-overlay--active", isOpen);
     this.body.classList.toggle(this.config.PAGE_BODY_NO_SCROLL, isOpen);
 
     this.burgerButton.setAttribute("aria-expanded", String(isOpen));
     this.burgerButton.setAttribute(
       "aria-label",
-      isOpen ? this.config.lABEL.CLOSE : this.config.lABEL.OPEN,
+      isOpen ? this.config.LABEL.CLOSE : this.config.LABEL.OPEN,
     );
   }
 
@@ -87,10 +85,6 @@ export default class BurgerMenu {
     this.body.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
 
     this.burgerButton.setAttribute("aria-expanded", "false");
-    this.burgerButton.setAttribute("aria-label", this.config.lABEL.OPEN);
-  }
-
-  isMenuOpen() {
-    return this.burgerMenu.classList.contains(this.config.HEADER_MENU_OPEN);
+    this.burgerButton.setAttribute("aria-label", this.config.LABEL.OPEN);
   }
 }

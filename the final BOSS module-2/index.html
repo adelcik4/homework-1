@@ -73,21 +73,256 @@
     <section class="hero">
       <div class="hero__container container">
         <div class="hero__content">
-          <h1 class="hero__title section-title--big">
+          <h1 class="hero__title">
             Уникальные технологии для ухода за волосами
           </h1>
-          <p class="hero__text text-regular">
+          <p class="hero__text">
             Идеальная укладка для всех типов волос вместе с Dyson
           </p>
           <button class="hero__button">Подробнее</button>
         </div>
+
         <picture>
+          <!-- Мобильная webp -->
+          <source
+            srcset="./images/hero-img-small.webp"
+            type="image/webp"
+            media="(max-width: 576px)"
+          />
+          <!-- Десктоп webp -->
           <source srcset="./images/hero-image.webp" type="image/webp" />
+          <!-- Мобильная png -->
+          <source
+            srcset="./images/hero-img-small.png"
+            media="(max-width: 576px)"
+          />
+          <!-- Десктоп png fallback -->
           <img
             src="./images/hero-image.png"
-            alt="Девушка с Феном Dyson в руке"
+            alt="Девушка с феном Dyson в руке"
             class="hero__img"
-        /></picture>
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="items section">
+      <div class="items__container container">
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-1.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-1.png"
+                alt="Акции"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Акции</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-2.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-2.png"
+                alt="Фены"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Фены</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-3.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-3.png"
+                alt="Стайлеры"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Стайлеры</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-4.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-4.png"
+                alt="Выпрямители"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Выпрямители</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-1.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-1.png"
+                alt="Акции"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Акции</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-2.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-2.png"
+                alt="Фены"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Фены</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-3.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-3.png"
+                alt="Стайлеры"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Стайлеры</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="item__cart">
+          <a href="#" class="item__link">
+            <picture>
+              <source
+                srcset="./images/items/item-img-4.webp"
+                type="image/webp"
+              />
+              <img
+                class="item__img"
+                src="./images/items/item-img-4.png"
+                alt="Выпрямители"
+                width="325"
+                height="325"
+                loading="lazy"
+              />
+            </picture>
+            <div class="item__content">
+              <h3 class="item__title">Выпрямители</h3>
+              <div class="item__more-container">
+                <p class="item__text">Подробнее</p>
+                <svg class="item__arrow" width="34" height="34">
+                  <use href="./icons/arrow.svg"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
       </div>
     </section>
   </body>

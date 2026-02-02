@@ -10,9 +10,28 @@
   overflow-x: hidden;
 }
 
+@media (width > 768px) {
+  .section {
+    margin-block: 150px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .section {
+    margin-block: 50px;
+  }
+}
+
+@media (width <= 576px) {
+  .section {
+    margin-block: 31px;
+  }
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .menu-overlay {
