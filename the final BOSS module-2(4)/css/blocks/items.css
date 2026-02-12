@@ -1,0 +1,266 @@
+.items {
+  background-color: #fff;
+}
+
+@media (width > 768px) {
+  .items {
+    padding-top: 150px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .items {
+    padding-top: 50px;
+  }
+}
+
+@media (width <= 576px) {
+  .items {
+    padding-top: 31px;
+  }
+}
+
+.items__container {
+  display: grid;
+}
+
+@media (width > 1200px) {
+  .items__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width <= 1200px) and (width > 992px) {
+  .items__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width <= 992px) {
+  .items__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 576px) {
+  .items__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width > 576px) {
+  .items__container {
+    gap: 20px;
+  }
+}
+
+@media (width <= 576px) {
+  .items__container {
+    gap: 10px;
+  }
+}
+
+.item__cart {
+  background: #fff;
+  box-shadow: var(--main-shadow);
+  transition:
+    background var(--transition-time),
+    color var(--transition-time);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (any-hover: hover) {
+  .item__cart:hover .item__content {
+    background: var(--deep-color);
+    color: var(--main-color);
+  }
+
+  .item__cart:hover .item__title,
+  .item__cart:hover .item__text,
+  .item__cart:hover .item__arrow {
+    color: var(--main-color);
+    fill: var(--main-color);
+  }
+}
+
+@media (width <= 576px) {
+  .item__cart {
+    max-width: 325px;
+    max-height: 425px;
+    padding: 0 auto;
+  }
+}
+
+.item__img {
+  height: auto;
+  align-self: center;
+}
+
+@media (width > 768px) {
+  .item__img {
+    border-radius: 10px;
+  }
+}
+
+@media (width <= 768px) {
+  .item__img {
+    border-radius: 5px;
+  }
+}
+
+.item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  color: var(--deep-color);
+  transition:
+    background var(--transition-time),
+    color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .item__content:hover {
+    background: var(--deep-color);
+    color: var(--main-color);
+  }
+}
+
+@media (width > 768px) {
+  .item__content {
+    padding: 20px 40px 30px 40px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .item__content {
+    padding: 10px 14px 15px 12px;
+  }
+}
+
+@media (width <= 576px) {
+  .item__content {
+    padding: 10px 42px 16px 12px;
+  }
+}
+
+.item__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  color: var(--deep-color);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .item__title:hover {
+    color: var(--main-color);
+  }
+}
+
+@media (width > 768px) {
+  .item__title {
+    font-size: 30px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .item__title {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 576px) {
+  .item__title {
+    font-size: 12px;
+  }
+}
+
+.item__more-container {
+  display: flex;
+  align-items: center;
+}
+
+@media (width > 768px) {
+  .item__more-container {
+    gap: 20px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .item__more-container {
+    gap: 8px;
+  }
+}
+
+@media (width <= 576px) {
+  .item__more-container {
+    gap: 10px;
+  }
+}
+
+.item__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--deep-color);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .item__text:hover {
+    color: var(--main-color);
+  }
+}
+
+@media (width > 768px) {
+  .item__text {
+    font-size: 24px;
+  }
+}
+
+@media (width <= 768px) and (width > 576px) {
+  .item__text {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 576px) {
+  .item__text {
+    font-size: 11px;
+  }
+}
+
+.item__title,
+.item__text {
+  color: inherit;
+}
+
+.item__arrow {
+  width: 24px;
+  height: 24px;
+  color: var(--deep-color);
+  fill: currentColor;
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .item__arrow:hover {
+    color: var(--main-color);
+  }
+}
+
+@media (width <= 968px) and (width > 576px) {
+  .item__arrow {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (width <= 576px) {
+  .item__arrow {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  /* fonts */
+
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "NAMU", sans-serif;
+
+  /* colors */
+
+  --main-color: #f8f8f8;
+  --accent-color: #c5358c;
+  --section-color: #f5f5f5;
+  --disabled-color: #ababab;
+  --bg-color: #ececec;
+  --deep-color: #111111;
+  --approval-color: #68ae5c;
+  --secondary-color: #909090;
+  --blackout-color: #dddddd;
+  --text-color: rgba(0, 0, 0, 0.2);
+
+  /* transitions */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+
+  /* shadows */
+  --main-shadow: 0 4px 41px rgba(0, 0, 0, 0.05);
+}

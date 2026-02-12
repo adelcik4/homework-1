@@ -1,0 +1,15 @@
+@import "./base/normalize.css";
+@import "./base/globals.css";
+@import "./base/vars.css";
+@import "./base/fonts.css";
+@import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/hero.css";
+@import "./blocks/items.css";
+@import "./blocks/article.css";
+@import "./blocks/view.css";
+@import "./blocks/choice.css";
+@import "./blocks/offer.css";
+@import "./blocks/reviews.css";
+@import "./blocks/faq.css";
+@import "./blocks/news.css";
