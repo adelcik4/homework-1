@@ -330,7 +330,7 @@
   .offer__status-availability::before {
     width: 10px;
     height: 10px;
-    transform: translateX(-23px);
+    transform: translateX(-12px);
   }
 }
 
